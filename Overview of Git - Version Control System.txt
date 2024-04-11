@@ -1,0 +1,123 @@
+What is Git ?
+Git is a Version Control System. It's a free and open-source distributed version control system
+designed to handle everything from small to very large projects with speed and efficiency.
+
+What is Version Control System ?
+As a developer, you need different versions of your project. Basically, a Version Control System
+maintains or track all changes in different versions of your project.
+
+How will you use a Version Control System?
+Why do we need a Version Control System?
+
+Use Cases of Version Control System (Git):
+
+1. Basic Use Case:
+"When you are alone developer, then you make lots of changes in your project."
+
+You are a developer working on the project "Social Media Website." You need to roll out certain
+features, such as feature-A, feature-B, feature-C, feature-D, feature-E, and so on. These features
+are rolled out at different times in our project timeline.
+
+Suppose you roll out feature-A at some point in time; then you acquire some users on your website
+Suppose users = 10.
+When you roll out feature-B, those users suddenly multiply by 10.
+So, users = 100.
+Then again, when you roll out feature-C, those users multiply by 10.
+So, users = 1000.
+As soon as you roll out feature-D, suddenly some users will leave.
+Users = 10000 - 500.
+So, users = 500.
+
+What is the first thing you do?
+The first thing you want to do is fix these bugs in feature-D. But what happens during that time is
+that you lose more users.
+
+So, a good solution would be:
+Roll back to feature-C and then fix the bugs in feature-D and roll out feature-D again.
+
+But, it's not possible every time to find a solution in one go. It's not like Ctrl+Z or undo because
+you save or push these files to the server or remote computer where other users are accessing them.
+
+So, a simpler solution would be:
+
+Every time you roll out a feature, you have to create a copy of my folder.
+When we roll out feature-A, then this folder contains feature-A.
+Eg. SocialMedia Folder = feature-A.
+When we roll out feature-B, then this folder contains feature-A and feature-B.
+Eg. SocialMedia Folder = feature-A + feature-B.
+When we roll out feature-C, then this folder contains feature-A, feature-B, and feature-C.
+Eg. SocialMedia Folder = feature-A + feature-B + feature-C.
+Then the folder gets even bigger when we roll out feature-D and so on. Then this folder contains
+feature-A, feature-B, feature-C, and feature-D.
+Eg. Social Folder = feature-A + feature-B + feature-C + feature-D and so on.
+
+In short, every time you roll out a feature, keep a copy of that folder. Next time, keep another
+copy, and so on. But there is a whole lot of data to manage, and there is lots of redundancy in that
+So, it's difficult to manage that folder.
+
+So, another better solution would be:
+
+What if we told someone watching my repository or folder and whenever we roll out a new feature, they
+note down in which files we made changes? And what are those changes?
+Eg.
+We roll out feature-A, creating a whole folder (i.e., everything will be changed).
+We roll out feature-B; the feature is about Posts, so we create the file "Post" and save it.
+We roll out feature-C, make some changes in Posts, and also create the file "Comments" and save it.
+Similarly, for feature-D, the feature is about Likes, so we create the file "Like" and save it.
+
+So, the person or system watching over your repository or folder notes down the changes made while
+rolling out different features (i.e., files created, modified, and deleted, and so on) in your
+project. That system is called a Version Control System or Git.
+
+When feature-D fails or we find some bugs, we can just ask that person or system (version control
+system) what changes were made while rolling out feature-D and can we skip those changes and roll
+back to feature-C in time.
+That would be ideal, isn't it? That is what version control is. Every feature of your project is a
+version, feature feature-A, feature-B, feature-C, feature-D has different versions version-V1,
+version-V2, version-V3, version-V4, respectively.
+
+Git is the most widely used version control system in the world right now.
+
+2.Advanced Use Case:
+"When you have two or more developer teams working on the same project."
+
+Suppose two different developer teams, team-P and team-Q, are working on the same project "Social
+Media Website." This project has only one folder. team-P and team-Q come to roll out certain
+features, such as feature-A, feature-B, feature-C, feature-D, feature-E, and so on. These features
+are rolled out at different times in our project timeline. 
+
+Every feature of the project comes with a different version, feature feature-A, feature-B, feature-C,
+feature-D has different versions version-V1, version-V2, version-V3, version-V4, respectively.
+
+First, team-P comes and rolls out feature-A, and then team-Q comes and rolls out feature-B.
+Now, team-P works on feature-C, and team-Q works on feature-D of the same project at the same time,
+and both teams are working in the same folder.
+
+Case 1: So, team-P completes its work first and rolls out feature-C and comes with an updated version
+of the project version-3. But team-Q works on feature-D with an earlier version of the project
+version-2 (i.e., where feature-C cannot be rolled out). Before team-Q rolls out feature-D, team-Q
+will need an updated version of the project (i.e., version-3) where feature-C is also implemented,
+then rollout.
+
+Team-Q asks team-P, "Dude, can you give me all the code you have?" (i.e., version-3).
+Team-Q takes code from team-P and analyzes (compares) both codes or versions (version-2 and
+version-3) line by line to find which new code was added by team-P.
+
+Case 2: It is quite possible that this folder initially contains 10 lines of code (i.e., version-2),
+when team-P changes it, it contains 14 lines of code (i.e., version-3), and when team-Q changes it,
+it also contains 14 lines of code (version-4). Which 14 lines of code should team-P (i.e., version-3)
+or team-Q (i.e., version-4) keep?
+
+In that case, both teams sit down together and analyze (compare) both codes or versions to see what
+changes both teams made in the project. Both teams, team-P and team-Q, have someone or some system
+watching over this project folder and noting which team made what changes and whether those changes
+were made on the same line number or are conflicting. This is again a version control system.
+
+If team-P and team-Q made changes in the same lines of code and both changes need to be rolled out as
+a feature, then someone needs to analyze both of these lines of code to see if they are conflicting
+with each other. Both teams then sit down together and go through these conflicting lines of code or
+those lines of code that are colliding.
+
+They decide which is better so that both features will be rolled out, and the teams come up with a
+combination of both team's code that keeps their own code as well as the other team's code and in
+which order the code is stored.
