@@ -1,0 +1,52 @@
+Write Clear and Meaningful Git Commit Messages
+
+There are no strict rules for writing commit messages but When working on a project on 
+GitHub, it's important to communicate clearly and concisely about the changes you've made. 
+One way to do this is through the use of keywords in your commit messages.
+
+These keywords, or labels, help to indicate the nature of the changes and make it easier 
+for others to understand the context of your contributions.
+
+Here are some common keywords and what they indicate:
+
+FEAT: Use this keyword to indicate that you are committing to a new feature.
+Example : 
+"FEAT: Add new login functionality."
+
+FIX: Use this keyword to indicate that you are committing a fix for a specific problem 
+or issue.
+Example : 
+"FIX: Fix bug causing crashes on certain devices."
+
+STYLE: Use this keyword to indicate that you are making changes to the style or formatting 
+of the code, but not its functionality.
+Example : 
+"STYLE: Update indentation in main.js."
+
+REFACTOR: Use this keyword to indicate that you are making changes to the code that 
+improve its structure or organisation, but do not add new features or fix bugs.
+Example : 
+"REFACTOR: Refactor the code to improve readability."
+
+TEST: Use this keyword to indicate that you are adding or updating tests for the code.
+Example : 
+"TEST: Add new unit tests for login functionality."
+
+CHORE: Use this keyword to indicate that you are making changes to the build process or 
+other tasks that are not directly related to the code itself.
+Example : 
+"CHORE: Update dependencies in package.json."
+
+PERF: Use this keyword to indicate that you are making changes to improve the performance 
+of the code.
+Example : 
+"PERF: Optimize image loading for faster performance."
+
+CI: Use this keyword to indicate that you are making changes to the continuous integration 
+process.
+Example : 
+"CI: Fix issue with test pipeline on Dashboard CI."
+
+BUILD: Use this keyword to indicate that you are making changes to the build process.
+Example : 
+"BUILD: Add new script for building the production version of the app."
